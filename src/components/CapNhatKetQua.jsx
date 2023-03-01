@@ -8,8 +8,7 @@ export default function CapNhatKetQua({ listCapDau }) {
 
     useEffect(() => {
         setListCacCapDauCapNhat(listCapDau)
-    }, [])
-    console.log(listCacCapDauCapNhat)
+    }, [listCapDau])
 
     function deleteCapNhat(stt) {
         const ArrCapNhat = [...listCapDau]

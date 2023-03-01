@@ -92,7 +92,7 @@ export const TenDoi = {
 
 export const TenCapDau = [
     {
-        Stt: 1,
+        Stt: '1',
         Bang: 'A',
         Thoigian: '20/11/2022, 23:00',
         TenDoiA: TenDoiTuyen.Quatar,
@@ -100,7 +100,7 @@ export const TenCapDau = [
         TenBang: ThongSo.BangA
     },
     {
-        Stt: 2,
+        Stt: '2',
         Bang: 'B',
         Thoigian: '21/11/2022, 20:00',
         TenDoiA: TenDoiTuyen.Anh,
@@ -108,7 +108,7 @@ export const TenCapDau = [
         TenBang: ThongSo.BangB
     },
     {
-        Stt: 3,
+        Stt: '3',
         Bang: 'A',
         Thoigian: '21/11/2022, 23:00',
         TenDoiA: TenDoiTuyen.Senegai,
@@ -116,7 +116,7 @@ export const TenCapDau = [
         TenBang: ThongSo.BangA
     },
     {
-        Stt: 4,
+        Stt: '4',
         Bang: 'B',
         Thoigian: '22/11/2022, 22:00',
         TenDoiA: TenDoiTuyen.My,

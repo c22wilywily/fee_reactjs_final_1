@@ -15,7 +15,7 @@ import CapNhatKetQua from './CapNhatKetQua';
 export default function CacCapDau() {
     const CacTenCapDau = [
         {
-            Stt: 1,
+            Stt: '1',
             Bang: 'A',
             Thoigian: '20/11/2022, 23:00',
             TenDoiA: TenDoiTuyen.Quatar,
@@ -26,7 +26,15 @@ export default function CacCapDau() {
     const [ThongTinCacCapDau, setThongTinCacCapDau] = React.useState(TenCapDau)
     const [a, setA] = React.useState(CacTenCapDau)
 
+    function handleEdit(stt) {
+        const arrThongTin = [...ThongTinCacCapDau]
+        console.log(stt)
+        const arr = arrThongTin.filter(item => item.Stt === stt)
+        console.log(arr)
 
+        setA(arr)
+        console.log(a)
+    }
 
     function CapDau({ arr }) {
         return (
@@ -39,7 +47,7 @@ export default function CacCapDau() {
                                     type="checkbox"
                                     label={value.Thoigian} />
                                 <Badge className='mx-3' bg="secondary">{value.Bang}</Badge>
-                                <Button className='mx-1' size="sm" variant="primary"><FaEdit /></Button>
+                                <Button className='mx-1' size="sm" variant="primary" onClick={() => handleEdit(value.Stt)}><FaEdit /></Button>
                             </Card.Header>
                             <Card.Body>
                                 <Card.Title>
